@@ -1,10 +1,10 @@
 {
-    "spider": "https://gh.llkk.cc/https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/spider.jar;md5;4240ee3b8c229184391a6dee8c5d3ad6",
+    "spider": "https://github.ednovas.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/spider.jar;md5;6044e3ceb295d82028c72e4524bae5f5",
     "wallpaper": "https://api.likepoems.com/img/bing",
     "sites": [
         {
             "key": "企鹅体育",
-            "name": "企鹅体育",
+            "name": "企鹅｜体育",
             "type": 3,
             "api": "csp_XPath",
             "searchable": 0,
@@ -17,7 +17,7 @@
         },
         {
             "key": "武享吧",
-            "name": "武享吧",
+            "name": "武享吧｜格斗",
             "type": 3,
             "api": "./JS/drpy2.min.js",
             "style": {
@@ -27,7 +27,7 @@
         },
         {
             "key": "88看球",
-            "name": "88看球",
+            "name": "88｜看球",
             "type": 3,
             "api": "./JS/drpy2.min.js",
             "style": {
@@ -37,7 +37,7 @@
         },
         {
             "key": "310直播",
-            "name": "310直播",
+            "name": "310｜直播",
             "type": 3,
             "api": "./JS/drpy2.min.js",
             "style": {
@@ -46,8 +46,18 @@
             "ext": "./JS/310直播.js"
         },
         {
+            "key": "360吧",
+            "name": "360｜直播",
+            "type": 3,
+            "api": "./JS/drpy2.min.js",
+            "style": {
+                "type": "list"
+            },
+            "ext": "./JS/360吧.js"
+        },
+        {
             "key": "JRKAN直播",
-            "name": "JRKAN直播",
+            "name": "JRKAN｜直播",
             "type": 3,
             "api": "./JS/drpy2.min.js",
             "style": {
@@ -56,21 +66,8 @@
             "ext": "./JS/JRKAN直播.js"
         },
         {
-            "key": "一起看直播",
-            "name": "一起看直播",
-            "type": 3,
-            "api": "csp_XYQBiu",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "style": {
-                "type": "list"
-            },
-            "ext": "./XYQBiu/一起看直播.json"
-        },
-        {
             "key": "push_agent",
-            "name": "推送",
+            "name": "手机｜推送",
             "type": 3,
             "api": "csp_Push",
             "searchable": 0,
@@ -79,9 +76,9 @@
             "ext": {
                 "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt"
-            },
-            "jar": "https://gh.llkk.cc/https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/danmu.jar;md5;df2357f95904cac4f6eb25765a6917a7"
+                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+                "danmu": true
+            }
         }
     ],
     "doh": [
@@ -130,11 +127,23 @@
     ],
     "lives": [
         {
-            "name": "live",
+            "name": "直播",
             "type": 0,
-            "url": "https://gh.llkk.cc/https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/live.txt",
-            "playerType": 1,
-            "epg": "http://epg.112114.eu.org/?ch={name}&date={date}"
+            "url": "http://127.0.0.1:9978/proxy?do=live&url=https://tv.iill.top/m3u/Gather",
+            "playerType": 2
+        },
+        {
+            "name": "范明明",
+            "type": 0,
+            "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+            "playerType": 2
+        },
+        {
+            "name": "肥羊",
+            "type": 3,
+            "api": "csp_Ysptp",
+            "ext": "https://github.ednovas.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/live.txt",
+            "logo": "https://live.fanmingming.com/tv/{name}.png"
         }
     ],
     "ijk": [
